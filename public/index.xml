@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://scastellotec.github.io/Hugo-001/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://scastellotec.github.io/Hugo-001/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contacto</title>
+      <link>https://scastellotec.github.io/Hugo-001/contacto/</link>
+      <pubDate>Thu, 20 Jan 2022 01:38:06 +0100</pubDate>
+      
+      <guid>https://scastellotec.github.io/Hugo-001/contacto/</guid>
+      <description>Este es mi primera entrada Aqui os cuento un monton de cosas:
+- Rapido- Ligero- Divertido </description>
+    </item>
+    
+  </channel>
+</rss>
