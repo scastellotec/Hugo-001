@@ -1,0 +1,34 @@
+name: Deploy Hugo Site
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+
+    # build agent
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+
+    # install / setup hugo
+    # https://github.com/peaceiris/actions-hugo
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+
+    # build site
+    - name: Build
+      run: hugo #--minify
+
+    # deploy to destination repo
+    # https://github.com/peaceiris/actions-gh-pages
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+        with:
+        github_token: ${{ secrets.SECRET }}
+        publish_dir: ./public
