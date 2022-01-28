@@ -1,6 +1,6 @@
 baseURL = 'https://scastellotec.github.io/Hugo-001/'
 languageCode = 'en-us'
-title = 'Mi sitio nuevo'
+title = 'Mi sitio casi nuevo'
 theme = 'tale'
 
 [menu]
